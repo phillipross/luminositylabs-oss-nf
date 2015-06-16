@@ -30,8 +30,9 @@
         </developer>
     </developers>
 
-    <!-- modules -->
-    <modules/>
+    <modules>
+        <module>distributions</module>
+    </modules>
 
     <scm>
         <url>http://bitbucket.com/luminositylabs/luminositylabs-oss</url>
@@ -45,6 +46,7 @@
         <surefire.forkCount>1</surefire.forkCount>
         <surefire.useSystemClassLoader>true</surefire.useSystemClassLoader>
         <!-- Plugin versioning -->
+        <download-maven-plugin.version>1.2.1</download-maven-plugin.version>
         <maven-clean-plugin.version>2.6.1</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
         <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
@@ -90,6 +92,11 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.googlecode.maven-download-plugin</groupId>
+                <artifactId>download-maven-plugin</artifactId>
+                <version>${download-maven-plugin.version}</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
