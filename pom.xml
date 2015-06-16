@@ -9,10 +9,34 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Luminosity Labs Open Source Software</name>
+    <name>Luminosity Labs Open Source Software Parent</name>
+    <description>Luminosity Labs Open Source Software</description>
+    <url>http://bitbucket.com/luminositylabs/luminositylabs-oss</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Luminosity Labs Team</name>
+            <email>luminositylabs@gmail.com</email>
+            <organization>Luminosity Labs LLC</organization>
+            <organizationUrl>http://bitbucket.com/luminositylabs</organizationUrl>
+        </developer>
+    </developers>
 
     <!-- modules -->
     <modules/>
+
+    <scm>
+        <url>http://bitbucket.com/luminositylabs/luminositylabs-oss</url>
+        <connection>scm:git:https://bitbucket.org/luminositylabs/luminositylabs-oss.git</connection>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
