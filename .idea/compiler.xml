@@ -31,12 +31,20 @@
         <processorPath useClasspath="true" />
         <module name="payara-web" />
       </profile>
+      <profile default="false" name="Annotation profile for pgsql-jdbc-geometry" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="pgsql-jdbc-geometry" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="distributions" target="1.8" />
       <module name="luminositylabs-oss-parent" target="1.8" />
       <module name="payara-full" target="1.8" />
       <module name="payara-web" target="1.8" />
+      <module name="pgsql-jdbc-geometry" target="1.8" />
       <module name="testing" target="1.8" />
     </bytecodeTargetLevel>
   </component>

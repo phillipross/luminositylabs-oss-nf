@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Postgresql Datatypes Test Suite" verbose="1">
+
+    <test name="Basic Tests">
+        <parameter name="orgPostgresqlJdbcDriverClassName" value="org.postgresql.Driver"/>
+        <parameter name="pgjdbcNgJdbcDriverClassName" value="com.impossibl.postgres.jdbc.PGDriver"/>
+        <parameter name="orgPostgresqlJdbcUrl" value="jdbc:postgresql://db01:5432/postgis1"/>
+        <parameter name="pgjdbcNgJdbcUrl" value="jdbc:pgsql://db01:5432/postgis1"/>
+        <parameter name="jdbcUsername" value="postgis1"/>
+        <parameter name="jdbcPassword" value="postgis1"/>
+        <classes>
+            <class name="co.luminositylabs.oss.testing.postgresql.datatypes.NativeGeometryDatatypeTest"/>
+        </classes>
+    </test>
+
+</suite>

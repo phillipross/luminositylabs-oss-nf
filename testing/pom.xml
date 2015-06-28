@@ -15,4 +15,8 @@
     <name>testing</name>
     <description>Test code aggregator module</description>
 
+    <modules>
+        <module>pgsql-jdbc-geometry</module>
+    </modules>
+
 </project>
