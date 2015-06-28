@@ -37,6 +37,7 @@
       <module name="luminositylabs-oss-parent" target="1.8" />
       <module name="payara-full" target="1.8" />
       <module name="payara-web" target="1.8" />
+      <module name="testing" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

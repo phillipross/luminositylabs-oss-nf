@@ -30,6 +30,7 @@
 
     <modules>
         <module>distributions</module>
+        <module>testing</module>
     </modules>
 
     <scm>
