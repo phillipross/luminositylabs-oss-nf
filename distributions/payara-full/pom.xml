@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>payara-full</artifactId>
-    <version>4.1.152.2-SNAPSHOT</version>
+    <version>4.1.152.1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>payara-full</name>
