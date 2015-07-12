@@ -83,7 +83,6 @@
                             <goal>attach-artifact</goal>
                         </goals>
                         <configuration>
-                            <skip>true</skip>
                             <artifacts>
                                 <artifact>
                                     <file>${project.build.directory}/${project.build.finalName}</file>
