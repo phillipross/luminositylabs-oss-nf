@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>payara-full</artifactId>
-    <version>4.1.153-SNAPSHOT</version>
+    <version>4.1.153</version>
     <packaging>jar</packaging>
 
     <name>payara-full</name>
@@ -95,4 +95,8 @@
             </plugin>
         </plugins>
     </build>
+
+  <scm>
+    <tag>payara-full-4.1.153</tag>
+  </scm>
 </project>
