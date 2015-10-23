@@ -9,18 +9,18 @@
     </parent>
 
     <artifactId>payara-full</artifactId>
-    <version>4.1.154-SNAPSHOT</version>
+    <version>4.1.1.154-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>payara-full</name>
 
     <properties>
-        <download.url>https://s3-eu-west-1.amazonaws.com/payara.co/Payara+Downloads/Payara+4.1.153/payara-4.1.153.zip</download.url>
-        <download.md5.checksum>fe8fe8199f1d28d170416991dacd73ef</download.md5.checksum>
+        <download.url>https://s3-eu-west-1.amazonaws.com/payara.co/Payara+Downloads/Payara+4.1.1.154/payara-4.1.1.154.zip</download.url>
+        <download.md5.checksum>539b65b682f578bbd3533a59562ca897</download.md5.checksum>
     </properties>
 
     <build>
-        <finalName>payara-4.1.153.zip</finalName>
+        <finalName>payara-4.1.1.154.zip</finalName>
         <plugins>
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
