@@ -17,12 +17,12 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for payara-full" enabled="true">
+      <profile default="false" name="Annotation profile for pgsql-jdbc-geometry" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="payara-full" />
+        <module name="pgsql-jdbc-geometry" />
       </profile>
       <profile default="false" name="Annotation profile for payara-web" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -31,12 +31,12 @@
         <processorPath useClasspath="true" />
         <module name="payara-web" />
       </profile>
-      <profile default="false" name="Annotation profile for pgsql-jdbc-geometry" enabled="true">
+      <profile default="false" name="Annotation profile for payara-full" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="pgsql-jdbc-geometry" />
+        <module name="payara-full" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
