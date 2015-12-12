@@ -46,7 +46,7 @@
         <surefire.forkCount>1</surefire.forkCount>
         <surefire.useSystemClassLoader>true</surefire.useSystemClassLoader>
         <!-- Plugin versioning -->
-        <build-helper-maven-plugin.version>1.9.1</build-helper-maven-plugin.version>
+        <build-helper-maven-plugin.version>1.10</build-helper-maven-plugin.version>
         <download-maven-plugin.version>1.2.1</download-maven-plugin.version>
         <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
