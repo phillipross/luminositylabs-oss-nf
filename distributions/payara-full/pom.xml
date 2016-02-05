@@ -15,12 +15,12 @@
     <name>payara-full</name>
 
     <properties>
-        <download.url>https://s3-eu-west-1.amazonaws.com/payara.co/Payara+Downloads/Payara+4.1.1.154/payara-4.1.1.154.zip</download.url>
-        <download.md5.checksum>539b65b682f578bbd3533a59562ca897</download.md5.checksum>
+        <download.url>https://s3-eu-west-1.amazonaws.com/payara.co/Payara+Downloads/Payara+4.1.1.161/payara-4.1.1.161.zip</download.url>
+        <download.md5.checksum>14c816e0621d2c654f0152a535b05984</download.md5.checksum>
     </properties>
 
     <build>
-        <finalName>payara-4.1.1.154.zip</finalName>
+        <finalName>payara-4.1.1.161.zip</finalName>
         <plugins>
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
