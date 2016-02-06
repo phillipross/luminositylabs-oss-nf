@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>payara-web</artifactId>
-    <version>4.1.1.161</version>
+    <version>4.1.1.162-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>payara-web</name>
@@ -95,8 +95,4 @@
             </plugin>
         </plugins>
     </build>
-
-  <scm>
-    <tag>payara-web-4.1.1.161</tag>
-  </scm>
 </project>
