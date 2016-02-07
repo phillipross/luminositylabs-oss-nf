@@ -1,0 +1,17 @@
+<configuration debug="false">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+        </layout>
+    </appender>
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <!--<logger name="co.luminositylabs" level="ERROR"/>-->
+    <logger name="co.luminositylabs" level="WARN"/>
+    <!--<logger name="co.luminositylabs" level="INFO"/>-->
+    <!--<logger name="co.luminositylabs" level="DEBUG"/>-->
+    <!--<logger name="co.luminositylabs" level="TRACE"/>-->
+
+</configuration>

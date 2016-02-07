@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/distributions/distributions.iml" filepath="$PROJECT_DIR$/distributions/distributions.iml" group="distributions and modules" />
       <module fileurl="file://$PROJECT_DIR$/luminositylabs-oss-parent.iml" filepath="$PROJECT_DIR$/luminositylabs-oss-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/distributions/payara-full/payara-full.iml" filepath="$PROJECT_DIR$/distributions/payara-full/payara-full.iml" group="distributions and modules" />
+      <module fileurl="file://$PROJECT_DIR$/testing/payara-logging-test-1/payara-logging-test-1.iml" filepath="$PROJECT_DIR$/testing/payara-logging-test-1/payara-logging-test-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/distributions/payara-web/payara-web.iml" filepath="$PROJECT_DIR$/distributions/payara-web/payara-web.iml" group="distributions and modules" />
       <module fileurl="file://$PROJECT_DIR$/testing/pgsql-jdbc-geometry/pgsql-jdbc-geometry.iml" filepath="$PROJECT_DIR$/testing/pgsql-jdbc-geometry/pgsql-jdbc-geometry.iml" group="testing and modules" />
       <module fileurl="file://$PROJECT_DIR$/testing/testing.iml" filepath="$PROJECT_DIR$/testing/testing.iml" group="testing and modules" />

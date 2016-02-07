@@ -17,6 +17,7 @@
 
     <modules>
         <module>pgsql-jdbc-geometry</module>
+        <module>payara-logging-test-1</module>
     </modules>
 
 </project>

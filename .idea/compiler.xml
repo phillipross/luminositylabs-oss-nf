@@ -38,11 +38,19 @@
         <processorPath useClasspath="true" />
         <module name="payara-full" />
       </profile>
+      <profile default="false" name="Annotation profile for payara-logging-test-1" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="payara-logging-test-1" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="distributions" target="1.8" />
       <module name="luminositylabs-oss-parent" target="1.8" />
       <module name="payara-full" target="1.8" />
+      <module name="payara-logging-test-1" target="1.8" />
       <module name="payara-web" target="1.8" />
       <module name="pgsql-jdbc-geometry" target="1.8" />
       <module name="testing" target="1.8" />
