@@ -17,33 +17,15 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for pgsql-jdbc-geometry" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="pgsql-jdbc-geometry" />
-      </profile>
-      <profile default="false" name="Annotation profile for payara-web" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="payara-web" />
-      </profile>
-      <profile default="false" name="Annotation profile for payara-full" enabled="true">
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="payara-full" />
-      </profile>
-      <profile default="false" name="Annotation profile for payara-logging-test-1" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="payara-logging-test-1" />
+        <module name="payara-web" />
+        <module name="pgsql-jdbc-geometry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
