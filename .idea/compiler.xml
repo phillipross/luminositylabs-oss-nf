@@ -23,9 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="payara-full" />
-        <module name="payara-logging-test-1" />
         <module name="payara-web" />
-        <module name="pgsql-jdbc-geometry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
