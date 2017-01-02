@@ -16,6 +16,8 @@
     <name>testing</name>
     <description>Test code aggregator module</description>
 
-    <modules/>
+    <modules>
+        <module>nio2-filewalker</module>
+    </modules>
 
 </project>
