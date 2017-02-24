@@ -84,11 +84,6 @@
             <version>${dependency.logback.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.puppycrawl.tools</groupId>
-            <artifactId>checkstyle</artifactId>
-            <version>${dependency.checkstyle.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${dependency.slfj.version}</version>
