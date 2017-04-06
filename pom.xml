@@ -82,9 +82,9 @@
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.0.0</maven-war-plugin.version>
         <!-- Dependency versions -->
-        <dependency.checkstyle.version>7.6</dependency.checkstyle.version>
-        <dependency.logback.version>1.2.1</dependency.logback.version>
-        <dependency.slfj.version>1.7.24</dependency.slfj.version>
+        <dependency.checkstyle.version>7.6.1</dependency.checkstyle.version>
+        <dependency.logback.version>1.2.3</dependency.logback.version>
+        <dependency.slfj.version>1.7.25</dependency.slfj.version>
         <dependency.testng.version>6.11</dependency.testng.version>
     </properties>
 
