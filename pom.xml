@@ -61,7 +61,7 @@
         <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
         <download-maven-plugin.version>1.4.0</download-maven-plugin.version>
         <exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
-        <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
+        <maven-checkstyle-plugin.version>3.0.0</maven-checkstyle-plugin.version>
         <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-dependency-plugin.version>3.0.2</maven-dependency-plugin.version>
@@ -83,10 +83,10 @@
         <maven-surefire-plugin.version>2.20.1</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.2.0</maven-war-plugin.version>
         <!-- Dependency versions -->
-        <dependency.checkstyle.version>8.5</dependency.checkstyle.version>
+        <dependency.checkstyle.version>8.8</dependency.checkstyle.version>
         <dependency.logback.version>1.2.3</dependency.logback.version>
         <dependency.slfj.version>1.7.25</dependency.slfj.version>
-        <dependency.testng.version>6.13.1</dependency.testng.version>
+        <dependency.testng.version>6.14.2</dependency.testng.version>
     </properties>
 
     <dependencies>
