@@ -1,4 +1,4 @@
-image: maven:3.5.2-jdk-8
+image: maven:3.5.3-jdk-8
 
 pipelines:
     default:
@@ -6,5 +6,4 @@ pipelines:
             script:
                 - mvn -V dependency:list-repositories
                 - mvn -V dependency:tree
-                - mvn -V clean
-                - mvn -V install
+                - mvn -V clean install
