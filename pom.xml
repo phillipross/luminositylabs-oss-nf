@@ -84,10 +84,10 @@
         <maven-versions-plugin.version>2.5</maven-versions-plugin.version>
         <maven-war-plugin.version>3.2.0</maven-war-plugin.version>
         <!-- Dependency versions -->
-        <dependency.checkstyle.version>8.8</dependency.checkstyle.version>
+        <dependency.checkstyle.version>8.9</dependency.checkstyle.version>
         <dependency.logback.version>1.2.3</dependency.logback.version>
         <dependency.slfj.version>1.7.25</dependency.slfj.version>
-        <dependency.testng.version>6.14.2</dependency.testng.version>
+        <dependency.testng.version>6.14.3</dependency.testng.version>
     </properties>
 
     <dependencies>
