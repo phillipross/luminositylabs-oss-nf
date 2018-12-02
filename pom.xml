@@ -53,7 +53,7 @@
         <checkstyle.skip>false</checkstyle.skip>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.min.version>1.8</java.min.version>
-        <maven.min.version>3.5</maven.min.version>
+        <maven.min.version>3.6</maven.min.version>
         <maven.test.skip>false</maven.test.skip>
         <surefire.forkCount>1</surefire.forkCount>
         <surefire.useSystemClassLoader>true</surefire.useSystemClassLoader>
