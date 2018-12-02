@@ -20,7 +20,7 @@
 
     <groupId>co.luminositylabs.oss</groupId>
     <artifactId>luminositylabs-oss-parent</artifactId>
-    <version>0.0.33-SNAPSHOT</version>
+    <version>0.0.34-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Luminosity Labs Open Source Software Parent</name>
