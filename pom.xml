@@ -20,7 +20,7 @@
 
     <groupId>co.luminositylabs.oss</groupId>
     <artifactId>luminositylabs-oss-parent</artifactId>
-    <version>0.0.34-SNAPSHOT</version>
+    <version>0.0.35-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Luminosity Labs Open Source Software Parent</name>
@@ -72,7 +72,7 @@
         <maven-failsafe-plugin.version>2.22.1</maven-failsafe-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
-        <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
+        <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
         <maven-jarsigner-plugin.version>3.0.0</maven-jarsigner-plugin.version>
         <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
         <maven-jxr-plugin.version>3.0.0</maven-jxr-plugin.version>
@@ -84,7 +84,7 @@
         <maven-war-plugin.version>3.2.2</maven-war-plugin.version>
         <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
         <!-- Dependency versions -->
-        <dependency.checkstyle.version>8.14</dependency.checkstyle.version>
+        <dependency.checkstyle.version>8.16</dependency.checkstyle.version>
         <dependency.logback.version>1.2.3</dependency.logback.version>
         <dependency.slfj.version>1.7.25</dependency.slfj.version>
         <dependency.testng.version>6.14.3</dependency.testng.version>
