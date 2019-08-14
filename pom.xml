@@ -62,7 +62,7 @@
         <directory-maven-plugin.version>0.3.1</directory-maven-plugin.version>
         <download-maven-plugin.version>1.4.2</download-maven-plugin.version>
         <exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
-        <git-commit-id-plugin.version>3.0.0</git-commit-id-plugin.version>
+        <git-commit-id-plugin.version>3.0.1</git-commit-id-plugin.version>
         <maven-archetype-plugin.version>3.1.1</maven-archetype-plugin.version>
         <maven-checkstyle-plugin.version>3.1.0</maven-checkstyle-plugin.version>
         <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
@@ -90,7 +90,7 @@
         <!-- Dependency versions -->
         <dependency.checkstyle.version>8.23</dependency.checkstyle.version>
         <dependency.logback.version>1.2.3</dependency.logback.version>
-        <dependency.slfj.version>1.7.26</dependency.slfj.version>
+        <dependency.slf4j.version>1.7.28</dependency.slf4j.version>
         <dependency.testng.version>6.14.3</dependency.testng.version>
     </properties>
 
@@ -108,7 +108,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>${dependency.slfj.version}</version>
+            <version>${dependency.slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
