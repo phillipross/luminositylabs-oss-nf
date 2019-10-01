@@ -5,4 +5,11 @@
     <ignoreVersions>
         <ignoreVersion type="regex">.*-[M|alpha|beta].*</ignoreVersion>
     </ignoreVersions>
+    <rules>
+        <rule groupId="org.testng" artifactId="testng" comparisonMethod="maven">
+            <ignoreVersions>
+                <ignoreVersion type="regex">7\..*</ignoreVersion>
+            </ignoreVersions>
+        </rule>
+    </rules>
 </ruleset>
