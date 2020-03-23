@@ -20,7 +20,7 @@
 
     <groupId>co.luminositylabs.oss</groupId>
     <artifactId>luminositylabs-oss-parent</artifactId>
-    <version>0.0.57-SNAPSHOT</version>
+    <version>0.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Luminosity Labs Open Source Software Parent</name>
@@ -50,13 +50,18 @@
     </scm>
 
     <properties>
-        <checkstyle.skip>false</checkstyle.skip>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.min.version>1.8</java.min.version>
         <maven.min.version>3.6</maven.min.version>
-        <maven.test.skip>false</maven.test.skip>
         <surefire.forkCount>1</surefire.forkCount>
         <surefire.useSystemClassLoader>true</surefire.useSystemClassLoader>
+
+        <checkstyle.skip>false</checkstyle.skip>
+        <cpd.skip>false</cpd.skip>
+        <jxr.skip>false</jxr.skip>
+        <maven.test.skip>false</maven.test.skip>
+        <pmd.skip>false</pmd.skip>
+        <spotbugs.skip>false</spotbugs.skip>
         <!-- Plugin versioning -->
         <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
         <directory-maven-plugin.version>0.3.1</directory-maven-plugin.version>
@@ -78,9 +83,10 @@
         <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
         <maven-jarsigner-plugin.version>3.0.0</maven-jarsigner-plugin.version>
-        <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
+        <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
         <maven-jxr-plugin.version>3.0.0</maven-jxr-plugin.version>
         <maven-pmd-plugin.version>3.13.0</maven-pmd-plugin.version>
+        <maven-project-info-reports-plugin.version>3.0.0</maven-project-info-reports-plugin.version>
         <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
         <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
         <maven-site-plugin.version>3.9.0</maven-site-plugin.version>
@@ -88,12 +94,14 @@
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
         <maven-war-plugin.version>3.2.3</maven-war-plugin.version>
-        <spotbugs-maven-plugin.version>3.1.12.2</spotbugs-maven-plugin.version>
+        <spotbugs-maven-plugin.version>4.0.0</spotbugs-maven-plugin.version>
         <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
         <!-- Dependency versions -->
         <dependency.checkstyle.version>8.30</dependency.checkstyle.version>
         <dependency.logback.version>1.2.3</dependency.logback.version>
+        <dependency.pmd.version>6.22.0</dependency.pmd.version>
         <dependency.slf4j.version>1.7.30</dependency.slf4j.version>
+        <dependency.spotbugs.version>4.0.1</dependency.spotbugs.version>
         <dependency.testng.version>6.14.3</dependency.testng.version>
     </properties>
 
@@ -144,6 +152,25 @@
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>${spotbugs-maven-plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.github.spotbugs</groupId>
+                        <artifactId>spotbugs</artifactId>
+                        <version>${dependency.spotbugs.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>spotbugs-check</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <skip>${spotbugs.skip}</skip>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
@@ -166,11 +193,19 @@
                         <version>${dependency.checkstyle.version}</version>
                     </dependency>
                 </dependencies>
+                <executions>
+                    <execution>
+                        <id>checkstyle</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
                     <consoleOutput>true</consoleOutput>
                     <skip>${checkstyle.skip}</skip>
-                    <!--<suppressionsLocation>suppressions.xml</suppressionsLocation>-->
                     <violationSeverity>warning</violationSeverity>
                 </configuration>
             </plugin>
@@ -262,6 +297,61 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>${maven-pmd-plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-core</artifactId>
+                        <version>${dependency.pmd.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-java</artifactId>
+                        <version>${dependency.pmd.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-javascript</artifactId>
+                        <version>${dependency.pmd.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-jsp</artifactId>
+                        <version>${dependency.pmd.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>pmd-check</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <skip>${pmd.skip}</skip>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>cpd-check</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>cpd-check</goal>
+                        </goals>
+                        <configuration>
+                            <skip>${cpd.skip}</skip>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <printFailingErrors>true</printFailingErrors>
+                    <rulesets>
+                        <ruleset>pmd.xml</ruleset>
+                    </rulesets>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>${maven-project-info-reports-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
