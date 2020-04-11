@@ -1,8 +1,10 @@
 .idea/deployment.xml
 .idea/dictionaries
+.idea/jarRepositories.xml
 .idea/misc.xml
 .idea/uiDesigner.xml
 .idea/workspace.xml
+.idea/libraries
 out
 target/
 *.releaseBackup
