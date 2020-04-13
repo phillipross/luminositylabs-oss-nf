@@ -16,14 +16,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="payara-web" />
         <module name="nio2-filewalker" />
         <module name="payara-full" />
-        <module name="payara-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="distributions" target="1.8" />
-      <module name="luminositylabs-oss-parent" target="1.8" />
+      <module name="luminositylabs-oss-parent" target="1.5" />
       <module name="nio2-filewalker" target="1.8" />
       <module name="payara-full" target="1.8" />
       <module name="payara-logging-test-1" target="1.8" />
