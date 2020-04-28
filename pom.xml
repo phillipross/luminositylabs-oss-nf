@@ -66,6 +66,7 @@
         <failsafe.useSystemClassLoader>true</failsafe.useSystemClassLoader>
         <surefire.forkCount>1</surefire.forkCount>
         <surefire.useSystemClassLoader>true</surefire.useSystemClassLoader>
+        <javadoc.path>${java.home}/bin/javadoc</javadoc.path>
         <checkstyle.skip>false</checkstyle.skip>
         <cpd.skip>false</cpd.skip>
         <jxr.skip>false</jxr.skip>
@@ -329,6 +330,7 @@
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>${maven-javadoc-plugin.version}</version>
                     <configuration>
+                        <javadocExecutable>${javadoc.path}</javadocExecutable>
                         <source>${java.min.version}</source>
                     </configuration>
                 </plugin>
@@ -687,6 +689,18 @@
     </reporting>
 
     <profiles>
+        <!-- This profile isn't tested on windows, the path may not be specified correctly. -->
+        <profile>
+            <id>windows-javadoc</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+            <properties>
+                <javadoc.path>${java.home}/bin/javadoc.exe</javadoc.path>
+            </properties>
+        </profile>
         <profile>
             <id>check-versions</id>
             <build>
