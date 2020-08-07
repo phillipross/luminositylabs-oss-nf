@@ -77,7 +77,7 @@
         <directory-maven-plugin.version>0.3.1</directory-maven-plugin.version>
         <download-maven-plugin.version>1.6.0</download-maven-plugin.version>
         <exec-maven-plugin.version>3.0.0</exec-maven-plugin.version>
-        <git-commit-id-plugin.version>4.0.1</git-commit-id-plugin.version>
+        <git-commit-id-plugin.version>4.0.2</git-commit-id-plugin.version>
         <jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
         <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
         <maven-archetype-plugin.version>3.2.0</maven-archetype-plugin.version>
@@ -114,7 +114,7 @@
         <dependency.logback.version>1.2.3</dependency.logback.version>
         <dependency.pmd.version>6.26.0</dependency.pmd.version>
         <dependency.slf4j.version>1.7.30</dependency.slf4j.version>
-        <dependency.spotbugs.version>4.0.6</dependency.spotbugs.version>
+        <dependency.spotbugs.version>4.1.1</dependency.spotbugs.version>
         <dependency.testng.version>6.14.3</dependency.testng.version>
     </properties>
 
