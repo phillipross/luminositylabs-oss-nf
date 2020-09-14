@@ -8,10 +8,10 @@ install:
   - source .travis-ci/install-maven.sh
 
 script:
-  - mvn -U -V -s settings.xml -Pgpg,release-sign-artifacts,sonatype-snapshots,sonatype-staging,sonatype-releases dependency:list-repositories
-  - mvn -U -V -s settings.xml -Pgpg,release-sign-artifacts,sonatype-snapshots,sonatype-staging,sonatype-releases dependency:tree
-  - mvn -U -V -s settings.xml -Pgpg,release-sign-artifacts,sonatype-snapshots,sonatype-staging,sonatype-releases help:active-profiles clean install
-  - mvn -U -V -s settings.xml -Pgpg,release-sign-artifacts,sonatype-snapshots,sonatype-staging,sonatype-releases site site:stage
+  - mvn -U -V -s settings.xml -Pgpg,release-sign-artifacts,sonatype-snapshots,sonatype-staging,sonatype-releases -Djavadoc.path=`which javadoc` dependency:list-repositories
+  - mvn -U -V -s settings.xml -Pgpg,release-sign-artifacts,sonatype-snapshots,sonatype-staging,sonatype-releases -Djavadoc.path=`which javadoc` dependency:tree
+  - mvn -U -V -s settings.xml -Pgpg,release-sign-artifacts,sonatype-snapshots,sonatype-staging,sonatype-releases -Djavadoc.path=`which javadoc` help:active-profiles clean install
+  - mvn -U -V -s settings.xml -Pgpg,release-sign-artifacts,sonatype-snapshots,sonatype-staging,sonatype-releases -Djavadoc.path=`which javadoc` site site:stage
 
 jobs:
   include:
